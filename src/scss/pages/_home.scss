@@ -1,0 +1,143 @@
+.section.coffee {
+  h2 {
+    text-align: center;
+  }
+}
+
+.section.about {
+  .grid-container {
+    margin-top: 2.5rem;
+    margin-bottom: -2.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2.5rem;
+    @media screen and (max-width: $breakpoint-md) {
+      margin-bottom: 0;
+      grid-template-columns: 2fr;
+      // grid-template-rows: 36.875rem 36.875rem;
+    }
+  }
+  
+  .grid-item {
+    overflow:hidden;
+    border-radius: 1.25rem;
+    &:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      aspect-ratio: 660 / 590;
+      margin-bottom: 2.5rem;
+      img {
+        margin-top: -2.125rem;
+      }
+    }
+    &:nth-child(2) {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      aspect-ratio: 660 / 430;
+      margin-top: -2.5rem;
+      margin-bottom: 2.5rem;
+      img {
+        margin-top: -7.188rem;
+      }
+    }
+    &:nth-child(3) {
+      aspect-ratio: 660 / 430;
+      img {
+        margin-top: -7.125rem;
+      }
+    }
+    &:nth-child(4) {
+      grid-row-start: 2;
+      grid-row-end: 4;
+      aspect-ratio: 660 / 590;
+      margin-bottom: 2.5rem;
+      img {
+        margin-top: -2.125rem;
+      }
+    }
+
+    img {
+      transform: scale(1.1);
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      &:nth-child(1) {
+        grid-row-end: 2;
+      }
+      &:nth-child(4) {
+        grid-row-end: 3;
+      }
+      &:nth-child(3n + 1) {
+        aspect-ratio: 688 / 590;
+        margin-bottom: 0;
+        img {
+          margin: 0;
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      min-height: 100%;
+      &:nth-child(3n + 1) {
+        aspect-ratio: 348 / 590;
+        img {
+          max-width: initial;
+          transform: scale(1);
+        }
+      }
+    }    
+  }
+}
+
+.section.mobile {
+  @include flex-container($justifyContent: space-between);
+  .content {
+    @include flex-container(
+    $direction: column,
+    $justifyContent: center,
+    $alignItems: start);
+    max-width: 39.375rem;
+    margin-right: 6.25rem;
+
+    p {
+      margin: 2.5rem 0;
+    }
+
+    .btn-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    .content {
+      max-width: 100%;
+      margin-right: 0;
+    }
+    .image-wrap {
+      margin-top: 6.2rem;
+    }
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    .content .btn-box {
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+    & .image-wrap {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section.about .grid-item img {
+    transition: all 0.4s ease 0s;
+  }
+}

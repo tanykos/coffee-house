@@ -1,0 +1,15 @@
+header {
+  @include flex-container(
+    $justifyContent: space-between
+  );
+  .logo {
+    width: 6.25rem;
+    height: 3.75rem;
+  }
+  .link {
+    img {
+      margin-left: 4px;
+      vertical-align: top;
+    }
+  }
+}
