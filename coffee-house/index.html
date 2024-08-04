@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee House</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/coffee-house/assets/apple-touch-icon-YMIW8tZv.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA51JREFUWEftle1PW2UYxn99oy09BYaA463tRocoIuFVqsBgDraxF8xkccFooh/2X5loHHGBIUOCmbgxJw17QReZbLyUAgPGCh1TJu0G7WnNcxKMGuihG4lfeL6d5DzP83uu+7ruW/Ng5FaU/3FpdgF2FdhV4GUVkGWZUCiEyWR6oTC/VAzDsszE5BRjHi/Vb5cjSRKj4x6sVok8hw2dTqcK9UIAkWgU8fJg8BmXr15n1OPlo5ZmLGYzbRe7cdhyaW46TILBsPMA4XCY+QUfI2MeJqemmZl7yH57rgIwt+CjvbuX8uIiTh45hGGnAaLRKJ6pGTq6v+P3P1awWBLR63QU5DvJzEhn6Ne7PF5+QusHp3g934lWq91ZBYTkvT9c4/adYeqqq3Duc3Dlupv74x6MRiNpqXt4p7KUqvISTEaj6uXih7g8sORf5qv2LhITzZxpbmJ2fkH5FiWoKCkma28Gma9mYDDot3W5KoCQXDg9EolAFFaePqXvRzdJkkSNq4Lp2XncN4doqKtmv932r0s1GpQUqCUhpgL+5Sf0XRvAO/2ASCSqgKwGA2g1WiyJZtbDYQKBIMlWCZ1OvDqKgAYNJpORkqI3cFWUkmSV0AiiTVZMgDt373G+o0s5QLIkqsoaDD5nwbeolMgqSawGgrxbWUZjfc2W+2MCuG8N0XbxW859fJbCggOqACKGX17oJM9u571aFz19/QjffNbaQm5OVvwKDN7+RWksn7aeofStwpixEtLPPXzE523tOB0OmhoOKokZ80xx7pOzOGw58QOIErR1XOJYQx21rsqYnW2jR3zxdSdms0lJxOj4JK8dyKPl5FH2pCTHDzAzO8/5jkvkZGdy+vgRxQtbLWHQ/oEb9Fy+gmjVer0eW3YWp44dZp8tZ0v1Ynrg+do6Xb3fM/zbfT48fYLCgvxNVRCvF7Vu6+xmZeVP3j/eSGpKEinJyYr5YkVRtRFNeKe58E0PaDScaKynwJmnuHxjhcMyjxaXuDowyL2xCY4eOqg432hM2DJ6/1RRFUBI6775M/0Dg6ythygrfhN7brbSakXifYtLDI+M4vP7qa2qpL7GFbNU/y2hKoDYsB4KKXP/pxtDeGdmkcOy0miE9KuBANmZe5UZUFZchFWyqMY1LgU2fpYjEWUCimm35H9M8NmaInNKkpX0tFdIT0vFmJAQ1+Wqs2Cz0/6eD3IErVajGGw7Y3crsm2VIO5nxbFhF2BXgb8ALuXL0MM1g0IAAAAASUVORK5CYII=">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAXBJREFUOE/Nk8tLAmEUxc+oGyMfoxiEGZGWUYuQHjTGaEkh7aICCSra9EdVK1tYiyAECSrIRYWl+WCsJCt6YCguIgvUGpyJEQqGnCjcdJff/fjdew7nEvdnJzzqKOL/AyqVCuRyuaRISQmCMSzLwr+9B5oaQJy5gNtFQyaTiWCSgDhzjuDhMTiew1CfDembWyzOTv8OUC6/YdnrwyhNYSuwA2uHGePOYeh15Dcpog3eWRbRRBKFl1ek0tdobTEil8/DajEDPECSGvT2dEGhUHyBRIBMNgffph9Uv000qVgq4ygchcnYjE5zO5z2wdqAx2wOgd0gluY9Iq1PzwWseNfRZjKC1GrgdjlqA4qlElbXNrDgmap+/KzTRBL7ByF0Wy1w0RQalMraAOE1FIkhEmcwMTYCtaoRdw+Z6vpzM5NoMuh/NlHocjyP1OUVwjEGgqlatQouhx0Gva5mmCRzIIB4jqt6QRDE35P42wOt+xo/APEdq+FqN+siAAAAAElFTkSuQmCC">
-    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <script type="module" crossorigin src="/coffee-house/assets/main-pv_OJYVI.js"></script>
     <link rel="stylesheet" crossorigin href="/coffee-house/assets/main-l69Yz0k7.css">
   </head>
@@ -15,7 +15,7 @@
     <header class="container home">
       <div class="logo">
         <a class="active" href="./index.html">
-          <img src="/coffee-house/assets/logo-4jQ88hZf.svg" alt="Coffee House">
+          <img src="./images/svg/logo.svg" alt="Coffee House">
         </a>
       </div>
       <div class="nav-wrap">
@@ -30,7 +30,7 @@
           </nav>
 
           <div class="link hide-l">
-            <a href="menu.html" class="menu-item">Menu <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='coffee-cup'%3e%3cpath%20id='Vector'%20d='M14.166%209.76667V11.6667C14.166%2014.8883%2011.5543%2017.5%208.33268%2017.5C5.11102%2017.5%202.49935%2014.8883%202.49935%2011.6667V9.76667C2.49935%209.4353%202.76798%209.16667%203.09935%209.16667H13.566C13.8974%209.16667%2014.166%209.4353%2014.166%209.76667Z'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector%2013'%20d='M9.99935%207.49996C9.99935%206.66663%2010.5946%205.83329%2011.7851%205.83329V5.83329C13.1%205.83329%2014.166%204.7673%2014.166%203.45234V2.91663'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector%2014'%20d='M6.66732%207.5V7.08333C6.66732%205.70262%207.78661%204.58333%209.16732%204.58333V4.58333C10.0878%204.58333%2010.834%203.83714%2010.834%202.91667V2.5'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector_2'%20d='M13.334%209.16663H15.4173C16.5679%209.16663%2017.5007%2010.0994%2017.5007%2011.25C17.5007%2012.4006%2016.5679%2013.3333%2015.4173%2013.3333H14.1673'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="Cup icon"></a>
+            <a href="menu.html" class="menu-item">Menu <img src="./images/svg/coffee-cup.svg" alt="Cup icon"></a>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
         <div class="bottom-line"></div>
       </div>
       <div class="link hide-md">
-        <a href="menu.html">Menu <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='coffee-cup'%3e%3cpath%20id='Vector'%20d='M14.166%209.76667V11.6667C14.166%2014.8883%2011.5543%2017.5%208.33268%2017.5C5.11102%2017.5%202.49935%2014.8883%202.49935%2011.6667V9.76667C2.49935%209.4353%202.76798%209.16667%203.09935%209.16667H13.566C13.8974%209.16667%2014.166%209.4353%2014.166%209.76667Z'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector%2013'%20d='M9.99935%207.49996C9.99935%206.66663%2010.5946%205.83329%2011.7851%205.83329V5.83329C13.1%205.83329%2014.166%204.7673%2014.166%203.45234V2.91663'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector%2014'%20d='M6.66732%207.5V7.08333C6.66732%205.70262%207.78661%204.58333%209.16732%204.58333V4.58333C10.0878%204.58333%2010.834%203.83714%2010.834%202.91667V2.5'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector_2'%20d='M13.334%209.16663H15.4173C16.5679%209.16663%2017.5007%2010.0994%2017.5007%2011.25C17.5007%2012.4006%2016.5679%2013.3333%2015.4173%2013.3333H14.1673'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="Cup icon"></a>
+        <a href="menu.html">Menu <img src="./images/svg/coffee-cup.svg" alt="Cup icon"></a>
       </div>
     </header>
     
@@ -53,11 +53,11 @@
                 and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
             <a class="link-btn-img" href="menu.html">
               Menu 
-              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='coffee-cup'%3e%3cpath%20id='Vector'%20d='M14.166%209.76667V11.6667C14.166%2014.8883%2011.5543%2017.5%208.33268%2017.5C5.11102%2017.5%202.49935%2014.8883%202.49935%2011.6667V9.76667C2.49935%209.4353%202.76798%209.16667%203.09935%209.16667H13.566C13.8974%209.16667%2014.166%209.4353%2014.166%209.76667Z'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector%2013'%20d='M9.99935%207.49996C9.99935%206.66663%2010.5946%205.83329%2011.7851%205.83329V5.83329C13.1%205.83329%2014.166%204.7673%2014.166%203.45234V2.91663'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector%2014'%20d='M6.66732%207.5V7.08333C6.66732%205.70262%207.78661%204.58333%209.16732%204.58333V4.58333C10.0878%204.58333%2010.834%203.83714%2010.834%202.91667V2.5'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector_2'%20d='M13.334%209.16663H15.4173C16.5679%209.16663%2017.5007%2010.0994%2017.5007%2011.25C17.5007%2012.4006%2016.5679%2013.3333%2015.4173%2013.3333H14.1673'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="Cup icon">
+              <img src="./images/svg/coffee-cup.svg" alt="Cup icon">
             </a>
           </div>
           <video autoplay muted loop>
-            <source src="/coffee-house/assets/video (2160p)-UQRjrHh9.mp4" type="video/mp4">
+            <source src="./images/video/video (2160p).mp4" type="video/mp4">
           </video>
         </section>
         
@@ -71,7 +71,7 @@
                 <div class="slide">
                   <div class="slide-content">
                     <figure>
-                      <img src="/coffee-house/assets/coffee-slider-1-EHFUZgXG.png">
+                      <img src="./images/coffee-slider-1.png">
                       <figcaption>S’mores Frappuccino</figcaption>
                     </figure>
                   
@@ -82,7 +82,7 @@
                 <div class="slide">
                   <div class="slide-content">
                     <figure>
-                      <img src="/coffee-house/assets/coffee-slider-2-rvjXcZKc.png">
+                      <img src="./images/coffee-slider-2.png">
                       <figcaption>Caramel Macchiato</figcaption>
                     </figure>
                   
@@ -93,7 +93,7 @@
                 <div class="slide">
                   <div class="slide-content">
                     <figure>
-                      <img src="/coffee-house/assets/coffee-slider-3-qDPriv3W.png">
+                      <img src="./images/coffee-slider-3.png">
                       <figcaption>Ice coffee</figcaption>
                     </figure>
                   
@@ -131,16 +131,16 @@
           <h2>Resource is <span class="text-accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
           <div class="grid-container">
             <div class="grid-item flex-md">
-              <img src="/coffee-house/assets/about-1-uiu_JrAk.jpg" alt="About photo">
+              <img src="./images/about-1.jpg" alt="About photo">
             </div>
             <div class="grid-item hide-md">
-              <img src="/coffee-house/assets/about-2-iUkDzkfu.jpg" alt="About photo">
+              <img src="./images/about-2.jpg" alt="About photo">
             </div>
             <div class="grid-item hide-md">
-              <img src="/coffee-house/assets/about-3-du87wfSl.jpg" alt="About photo">
+              <img src="./images/about-3.jpg" alt="About photo">
             </div>
             <div class="grid-item flex-md">
-              <img src="/coffee-house/assets/about-4-I97UL4wP.jpg" alt="About photo">
+              <img src="./images/about-4.jpg" alt="About photo">
             </div>
           </div>
         </section>
@@ -179,7 +179,7 @@
             
           </div>
           <div class="image-wrap">
-            <img src="/coffee-house/assets/mobile-screens-TCtQJHru.png" alt="Mobile phone">
+            <img src="./images/mobile-screens.png" alt="Mobile phone">
           </div>
         </section>
     </main>
@@ -218,18 +218,18 @@
         <ul>
           <li class="link">
             <a href="https://www.google.com/maps?q=New+York" target="_blank">
-              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='pin-alt'%3e%3cpath%20id='Ellipse'%20d='M16.6673%208.33333C16.6673%2012.0152%2010.0007%2018.3333%2010.0007%2018.3333C10.0007%2018.3333%203.33398%2012.0152%203.33398%208.33333C3.33398%204.65144%206.31875%201.66667%2010.0007%201.66667C13.6825%201.66667%2016.6673%204.65144%2016.6673%208.33333Z'%20stroke='%23E1D4C9'%20stroke-width='1.5'/%3e%3cpath%20id='Vector'%20d='M9.99935%209.16667C10.4596%209.16667%2010.8327%208.79357%2010.8327%208.33333C10.8327%207.8731%2010.4596%207.5%209.99935%207.5C9.53911%207.5%209.16602%207.8731%209.16602%208.33333C9.16602%208.79357%209.53911%209.16667%209.99935%209.16667Z'%20fill='%23E1D4C9'%20stroke='%23E1D4C9'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="Pin icon">
+              <img src="./images/svg/pin-alt.svg" alt="Pin icon">
               8558 Green Rd.,  LA
             </a>
           </li>
           <li class="link">
             <a href="tel:+999">
-              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='phone'%3e%3cpath%20id='Path'%20d='M15.0984%2012.2516L11.6665%2012.9166C9.34845%2011.7531%207.91654%2010.4166%207.08321%208.33329L7.72483%204.89154L6.51197%201.66663L3.72946%201.66663C2.60191%201.66663%201.71466%202.59958%201.90108%203.71161C2.29888%206.08454%203.37231%2010.0391%206.24987%2012.9166C9.27338%2015.9401%2013.5661%2017.3318%2016.1378%2017.9288C17.299%2018.1983%2018.3332%2017.2908%2018.3332%2016.0988L18.3332%2013.4843L15.0984%2012.2516Z'%20stroke='%23E1D4C9'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="Phone icon">
+              <img src="./images/svg/phone.svg" alt="Phone icon">
               +1 (603) 555-0123
             </a>
           </li>
           <li class="time">
-            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='clock'%20clip-path='url(%23clip0_217_1736)'%3e%3cpath%20id='Vector'%20d='M10%205L10%2010L15%2010'%20stroke='%23E1D4C9'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20id='Vector_2'%20d='M10.0003%2018.3333C14.6027%2018.3333%2018.3337%2014.6023%2018.3337%209.99996C18.3337%205.39759%2014.6027%201.66663%2010.0003%201.66663C5.39795%201.66663%201.66699%205.39759%201.66699%209.99996C1.66699%2014.6023%205.39795%2018.3333%2010.0003%2018.3333Z'%20stroke='%23E1D4C9'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_217_1736'%3e%3crect%20width='20'%20height='20'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="Clock icon">
+            <img src="./images/svg/clock.svg" alt="Clock icon">
             <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
           </li>
         </ul>
