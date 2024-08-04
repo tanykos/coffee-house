@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+  </head>
+  <body id="homePage">
+    <header class="container home">
+      <div class="logo">
+        <a class="active" href="./index.html">
+          <img src="./images/svg/logo.svg" alt="Coffee House">
+        </a>
+      </div>
+      <div class="nav-wrap">
+        <div class="nav">
+          <nav>
+            <ul>
+              <li><a class="menu-item" href="#coffee">Favorite coffee</a></li>
+              <li><a class="menu-item" href="#about">About</a></li>
+              <li><a class="menu-item" href="#mobile">Mobile app</a></li>
+              <li><a class="menu-item" href="#contact">Contact us</a></li>
+            </ul>
+          </nav>
+
+          <div class="link hide-l">
+            <a href="menu.html" class="menu-item">Menu <img src="./images/svg/coffee-cup.svg" alt="Cup icon"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-button">
+        <div class="top-line"></div>
+        <div class="bottom-line"></div>
+      </div>
+      <div class="link hide-md">
+        <a href="menu.html">Menu <img src="./images/svg/coffee-cup.svg" alt="Cup icon"></a>
+      </div>
+    </header>
+    
+    <main class="container">
+        <section class="section-hero">
+          <div class="flexbox-text">
+            <h1><span class="text-accent">Enjoy</span> premium<br>coffee at our<br>charming cafe</h1>
+            <p>With its inviting atmosphere and delicious coffee options,
+               the Coffee House Resource is a popular destination for coffee lovers
+                and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+            <a class="link-btn-img" href="menu.html">
+              Menu 
+              <img src="./images/svg/coffee-cup.svg" alt="Cup icon">
+            </a>
+          </div>
+          <video autoplay muted loop>
+            <source src="./images/video/video (2160p).mp4" type="video/mp4">
+          </video>
+        </section>
+        
+        <section id="coffee" class="section coffee">
+          <h2>Choose your <span class="text-accent">favorite</span> coffee</h2>
+
+          <div class="slider">
+            <!-- Slides -->
+            <div class="slide-wrap">
+              <div class="carousel">
+                <div class="slide">
+                  <div class="slide-content">
+                    <figure>
+                      <img src="./images/coffee-slider-1.png">
+                      <figcaption>S’mores Frappuccino</figcaption>
+                    </figure>
+                  
+                    <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                    <h3>$5.50</h3>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-content">
+                    <figure>
+                      <img src="./images/coffee-slider-2.png">
+                      <figcaption>Caramel Macchiato</figcaption>
+                    </figure>
+                  
+                    <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                    <h3>$5.00</h3>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-content">
+                    <figure>
+                      <img src="./images/coffee-slider-3.png">
+                      <figcaption>Ice coffee</figcaption>
+                    </figure>
+                  
+                    <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                    <h3>$4.50</h3>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <!-- Slider arrow -->
+            <button class="arrow prev" id="prev">
+              <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="arrow-left">
+                <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </button>
+            <button class="arrow next" id="next">
+              <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="arrow-right">
+                  <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </button>
+            <!-- Slider progress -->
+            <div class="progress">
+              <span class="dash active"><span class="dash-progress"></span></span>
+              <span class="dash"><span class="dash-progress"></span></span>
+              <span class="dash"><span class="dash-progress"></span></span>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <h2>Resource is <span class="text-accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+          <div class="grid-container">
+            <div class="grid-item flex-md">
+              <img src="./images/about-1.jpg" alt="About photo">
+            </div>
+            <div class="grid-item hide-md">
+              <img src="./images/about-2.jpg" alt="About photo">
+            </div>
+            <div class="grid-item hide-md">
+              <img src="./images/about-3.jpg" alt="About photo">
+            </div>
+            <div class="grid-item flex-md">
+              <img src="./images/about-4.jpg" alt="About photo">
+            </div>
+          </div>
+        </section>
+
+        <section id="mobile" class="section mobile">
+          <div class="content">
+            <h2><span class="text-accent">Download</span> our apps to start ordering</h2>
+            <p>Download the Resource app today and experience the comfort of ordering
+               your favorite coffee from wherever you are
+            </p>
+            <div class="btn-box">
+              <button class="primary-btn">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.7063 18.6307C26.6694 14.6324 30.0641 12.6872 30.2193 12.5966C28.2967 9.86366 25.3169 9.49026 24.2697 9.46048C21.767 9.20369 19.3393 10.9206 18.0644 10.9206C16.764 10.9206 14.8008 9.48529 12.6848 9.52747C9.96196 9.56841 7.41468 11.1055 6.01762 13.4923C3.13444 18.359 5.28474 25.5108 8.04705 29.4446C9.42884 31.3712 11.0435 33.5223 13.1569 33.4466C15.2245 33.3635 15.9968 32.1614 18.4919 32.1614C20.9641 32.1614 21.6893 33.4466 23.8447 33.3983C26.0637 33.3635 27.4608 31.463 28.7942 29.519C30.3911 27.3108 31.0323 25.1362 31.0578 25.0245C31.0056 25.0071 26.7483 23.4229 26.7063 18.6307Z" fill="currentColor"/>
+                  <path d="M22.6347 6.87268C23.7468 5.51675 24.5076 3.67205 24.2964 1.80005C22.6869 1.86952 20.674 2.88554 19.5149 4.21169C18.4893 5.38029 17.5732 7.29571 17.8099 9.097C19.6179 9.2285 21.4743 8.20752 22.6347 6.87268Z" fill="currentColor"/>
+                </svg>
+                  
+                <span>
+                  <span class="subtitle">Available on the</span>
+                  <span class="title">App Store</span>
+                </span>                
+              </button>
+              <button class="primary-btn">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.7558 3.20309C3.39335 3.57302 3.18359 4.14896 3.18359 4.89483V31.4995C3.18359 32.2454 3.39335 32.8213 3.7558 33.1913L3.84525 33.2725L19.1359 18.3701V18.0182L3.84525 3.11587L3.7558 3.20309Z" fill="currentColor"/>
+                  <path id="Vector_2" d="M26.0776 23.34L20.9863 18.3701V18.0182L26.0837 13.0482L26.1979 13.1129L32.2345 16.4618C33.9573 17.4122 33.9573 18.9761 32.2345 19.9325L26.1979 23.2754L26.0776 23.34Z" fill="currentColor"/>
+                  <path id="Vector_3" d="M25.2733 24.2008L20.0617 19.1196L4.68164 34.1167C5.25384 34.7031 6.18695 34.7738 7.24807 34.1873L25.2733 24.2008Z" fill="currentColor"/>
+                  <path id="Vector_4" d="M25.2733 12.1876L7.24807 2.20103C6.18695 1.62058 5.25384 1.69125 4.68164 2.27772L20.0617 17.2688L25.2733 12.1876Z" fill="currentColor"/>
+                </svg>
+                <span>
+                  <span class="subtitle">Available on</span>
+                  <span class="title">Google Play</span>
+                </span>                
+              </button>
+            </div>
+            
+          </div>
+          <div class="image-wrap">
+            <img src="./images/mobile-screens.png" alt="Mobile phone">
+          </div>
+        </section>
+    </main>
+    
+    <footer class="container section footer-home" id="contact">
+      <div class="left-col">
+        <h2>Sip, Savor, Smile. <span class="text-accent">It’s coffee time!</span></h2>
+        <div class="btn-box">
+          <button class="icon-btn">
+            <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="twitter">
+              <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </button>
+          <button class="icon-btn">
+            <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="instagram">
+              <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="currentColor"/>
+              <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </button>
+          <button class="icon-btn">
+            <svg class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="facebook">
+              <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="right-col">
+        <h3>Contact us</h3>
+        <ul>
+          <li class="link">
+            <a href="https://www.google.com/maps?q=New+York" target="_blank">
+              <img src="./images/svg/pin-alt.svg" alt="Pin icon">
+              8558 Green Rd.,  LA
+            </a>
+          </li>
+          <li class="link">
+            <a href="tel:+999">
+              <img src="./images/svg/phone.svg" alt="Phone icon">
+              +1 (603) 555-0123
+            </a>
+          </li>
+          <li class="time">
+            <img src="./images/svg/clock.svg" alt="Clock icon">
+            <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js" defer></script>
+  </body>
+</html>
