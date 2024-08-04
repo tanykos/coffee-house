@@ -8,7 +8,9 @@ Interactive and responsive website consisting of:
 + 'Home' page  
 + 'Menu' page
 + Modal for the selected product on the 'Menu' page
-  
+
+[Deploy link](https://tanykos.github.io/coffee-house)  
+
 [Design link in Figma](https://www.figma.com/design/SAoBmuOqTfguehdT4IFRxQ/Coffee-House?node-id=0-1&t=43YXf4HbkO05EH3W-0)
 
 ---
