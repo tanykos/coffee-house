@@ -2,7 +2,7 @@
   "name": "coffee-house",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/tanykos/coffee-house",
+  "homepage": "https://rolling-scopes-school.github.io/tanykos/coffee-house",
   "type": "module",
   "scripts": {
     "dev": "vite",
