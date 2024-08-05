@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
-    sourcemap: true, // enable production source maps
+    sourcemap: true,
     rollupOptions: {
       input: {
         index: './index.html',
@@ -11,7 +11,7 @@ export default defineConfig({
     }
   },
   css: {
-    devSourcemap: true // enable CSS source maps during development
+    devSourcemap: true
   },
   base: "/coffee-house/"
 })
