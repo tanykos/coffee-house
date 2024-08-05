@@ -95,4 +95,4 @@
           </div>
         </div>
       `,n.appendChild(E),E);let p,y=0,o=0,h,M;function A(e){if(e.target.classList.contains("grid-item")){const s=e.target.id,i=r.find(f=>f.id===s);h=parseFloat(i.price),p=h,v=$(i),v.showModal(),v.addEventListener("click",C),M=v.querySelector("#costForm"),M.addEventListener("change",P)}}function P(e){let s=e.target,i=document.querySelector("#totalCost");e.target.type==="radio"&&s.checked&&(y=parseFloat(s.value),p=h+y+o,i.textContent=p.toFixed(2)),e.target.type==="checkbox"&&(s.checked?(o+=.5,p=h+y+o,i.textContent=p.toFixed(2)):(o-=.5,p=h+y+o,i.textContent=p.toFixed(2)))}}};T.init();
-//# sourceMappingURL=main-MSEJA5IU.js.map
+//# sourceMappingURL=main-pv_OJYVI.js.map
