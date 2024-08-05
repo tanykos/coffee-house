@@ -1,9 +1,0 @@
-.flexbox-text {
-  @include flex-container(
-    $direction: column,
-    $wrap: wrap,
-    $alignItems: start
-  );
-
-  max-width: 33.125rem;
-}
